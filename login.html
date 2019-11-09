@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+<style>
+    body{
+        margin: 0px;  
+        background-image: linear-gradient(to top, #000000 , #616161);
+        font-family: 'Muli', sans-serif;
+    }
+
+    .main{
+        display:grid;
+        grid-template: 100px 1fr 100px/ 1fr;
+        height: 100vh;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .logo {
+        height: 50px;
+        padding: 20px;
+        }
+
+    .login{
+        display: grid;
+        grid-template: 1fr 4fr 1fr 1fr/1fr;
+        height: 100%;
+        width: 400px;
+        background-color: rgb(255, 255, 255,0.1); 
+        justify-items: center;
+        align-items: center;
+        border: 2px solid white;
+        border-radius: 40px;
+        color: white;
+    }
+
+    .form{
+        display: grid;
+        grid-template: 1fr 1fr 30px 1fr /1fr;
+        height: 100%;
+        width: 400px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .terminos{
+        color: #EDEDED;
+    }
+
+    .encabezado{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .input{
+        background-color: transparent;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 2px solid white;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        height: 40px;
+        width: 70%;
+        outline: none;
+        padding: 0px 20px;
+        color: white;
+        }
+    ::placeholder{
+        color: white;
+    }
+
+    .button{
+        border-radius: 30px;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        height: 40px;
+        width: 50%;
+        outline: none;
+        padding: 0px 20px;
+        background-color: rgb(255, 255, 255,0.1); 
+        color: white;
+        cursor: pointer;
+        }
+    .recuperar{
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .recuperar:hover{
+        text-decoration: underline;
+    }
+    .social span{
+        padding: 20px;
+    }
+    .registry{
+        font-size: 14px;
+    }
+
+    .registry a{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .registry a:hover{
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div class="main">
+        <img class="logo" src="./assets/logo_platzi_video.png" alt="Platzi Video">
+        <div class="login">
+            <span class="encabezado">Entrar a tu cuenta</span>
+            <form class="form">
+                <input class="input" type="text"  placeholder="Correo o número de teléfono">
+                <input class="input" type="password"  placeholder="Contraseña">
+                <a class="recuperar" href="./index.html">Olvidaste tu contraseña</a>
+                <button class="button">Entrar</button>
+            </form>
+            <div class="social">
+                <span>Facebook</span><span>google</span>
+            </div>
+            <span class="registry"> No tienes cuenta <a href="./index.html">Registrate</a></span>
+        </div>
+        <div class="terminos">
+            <span>Términos de uso - Ayuda - Política de privacidad</span>
+        </div>
+    </div>
+</body>
+</html>
